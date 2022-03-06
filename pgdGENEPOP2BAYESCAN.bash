@@ -1,13 +1,13 @@
 #!/bin/bash
 
 pgdJAR=~/Downloads/PGDSpider_2.1.1.5/PGDSpider2-cli.jar
-inFILE=~/Projects/PuntioplitesFalcifer/fltrVCF_4revision/Pfalcifer.3.7.Fltr20.2.randSNPperLoc.vcf
-inFORMAT=VCF
+inFILE=~/Projects/PuntioplitesFalcifer/fltrVCF_4revision/Pfalcifer_3_7_Fltr19_popmap_3_7_ppr_genclust_haps_genepop.txt
+inFORMAT=GENEPOP
 outFileEXT=bayescan
 outFORMAT=GESTE_BAYE_SCAN
-spidFILE=~/Projects/PuntioplitesFalcifer/pgdspider/vcf2bayescan.spid
+spidFILE=~/Projects/PuntioplitesFalcifer/pgdspider/genepop2bayescan.spid
 
-outFILE=$(basename $inFILE | sed "s/\.vcf/\.$outFileEXT/")
+outFILE=$(basename $inFILE | sed "s/\.txt/\.$outFileEXT/")
 
 source ~/anaconda3/etc/profile.d/conda.sh
 conda activate pgdspider
