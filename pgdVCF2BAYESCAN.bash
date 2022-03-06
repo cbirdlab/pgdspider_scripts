@@ -7,7 +7,8 @@
 pgdJAR=~/Downloads/PGDSpider_2.1.1.5/PGDSpider2-cli.jar
 
 # you shouldn't have to edit anything from here forward
-inFILE=$1inFORMAT=VCF
+inFILE=$1
+inFORMAT=VCF
 outFileEXT=bayescan
 outFORMAT=GESTE_BAYE_SCAN
 spidFILE=~/Projects/PuntioplitesFalcifer/pgdspider/vcf2bayescan.spid
