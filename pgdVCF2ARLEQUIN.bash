@@ -10,7 +10,7 @@ pgdJAR=~/Downloads/PGDSpider_2.1.1.5/PGDSpider2-cli.jar
 inFILE=$1inFORMAT=VCF
 outFileEXT=arp
 outFORMAT=ARLEQUIN
-spidFILE=~/Projects/PuntioplitesFalcifer/pgdspider/vcf2arlequin.spid
+spidFILE=./vcf2arlequin.spid
 
 outFILE=$(basename $inFILE | sed "s/\.vcf/\.$outFileEXT/")
 
