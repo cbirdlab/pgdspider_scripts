@@ -11,7 +11,7 @@ inFILE=$1
 inFORMAT=VCF
 outFileEXT=bayescan
 outFORMAT=GESTE_BAYE_SCAN
-spidFILE=~/Projects/PuntioplitesFalcifer/pgdspider/vcf2bayescan.spid
+spidFILE=./vcf2bayescan.spid
 
 outFILE=$(basename $inFILE | sed "s/\.vcf/\.$outFileEXT/")
 
