@@ -11,7 +11,7 @@ inFILE=$1
 inFORMAT=GENEPOP
 outFileEXT=bayescan
 outFORMAT=GESTE_BAYE_SCAN
-spidFILE=~/Projects/PuntioplitesFalcifer/pgdspider/genepop2bayescan.spid
+spidFILE=./genepop2bayescan.spid
 
 outFILE=$(basename $inFILE | sed "s/\.txt/\.$outFileEXT/")
 
