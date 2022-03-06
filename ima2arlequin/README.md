@@ -28,9 +28,35 @@ ima2arlequin_afterR.bash
 I manually copied and pasted the population specific haplotype data to an arelquin file that was made with pgdspider using the genepop output from `rad_haplotyper`
 
 
-While you are manually editing that arlequin file, don't forget to rename it and change the data type to DNA
+While you are manually editing that arlequin file, don't forget to rename it and make sure the header is correct.
+```
+[Profile]
+  Title = "MyRadHapOut.haps.genepop"
+  NbSamples = 5
+  DataType = DNA
+  GenotypicData = 1
+  LocusSeparator = WHITESPACE
+  MissingData = "?"
+  GameticPhase = 0
+  RecessiveData = 0
+```
 
 ```bash
 # remove the tidy formated population identifiers from each pop (you will need to modify the code for your popnames)
 ima2arlequin_aftermanualcopypaste.bash
+```
+
+Finally add a structure block onto the end of the arlquin file.  It must include all of your pops
+```
+[[Structure]]
+	StructureName = "One cluster"
+	NbGroups = 1
+
+	Group = {
+		"At_Sk"
+		"At_Mk"
+		"Pk"
+		"St"
+		"Kr"
+	}
 ```
