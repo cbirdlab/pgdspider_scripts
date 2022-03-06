@@ -1,0 +1,23 @@
+# spid-file generated: Thu Mar 03 22:44:47 CST 2022
+
+# GENEPOP Parser questions
+PARSER_FORMAT=GENEPOP
+
+# Enter the size of the repeated motif (same for all loci: one number; different: comma separated list (e.g.: 2,2,3,2):
+GENEPOP_PARSER_REPEAT_SIZE_QUESTION=
+# Select the type of the data:
+GENEPOP_PARSER_DATA_TYPE_QUESTION=MICROSAT
+# How are Microsat alleles coded?
+GENEPOP_PARSER_MICROSAT_CODING_QUESTION=ARBITARY
+
+# Arlequin Writer questions
+WRITER_FORMAT=ARLEQUIN
+
+# Specify which data type should be included in the Arlequin file  (Arlequin can only analyze one data type per file):
+ARLEQUIN_WRITER_DATA_TYPE_QUESTION=DNA
+# Do you want to convert SNP/DNA to numeric format with 0 representing anchestral state (for derived (unfolded) SFS estimations in Arlequin)?
+ARLEQUIN_WRITER_ANCHESTRAL_STATE_QUESTION=false
+# Specify the locus/locus combination you want to write to the Arlequin file:
+ARLEQUIN_WRITER_LOCUS_COMBINATION_QUESTION=
+# Specify the DNA locus you want to write to the Arlequin file or write "CONCAT" for concatenation:
+ARLEQUIN_WRITER_CONCATENATE_QUESTION=
