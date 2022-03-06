@@ -1,7 +1,13 @@
 #!/bin/bash
 
+# ex
+# bash pgdGENEPOP2BAYESCAN.bash genepop_infile.txt
+
+# edit this path for your computer
 pgdJAR=~/Downloads/PGDSpider_2.1.1.5/PGDSpider2-cli.jar
-inFILE=~/Projects/PuntioplitesFalcifer/fltrVCF_4revision/Pfalcifer_3_7_Fltr19_popmap_3_7_ppr_genclust_haps_genepop.txt
+
+# you shouldn't have to edit anything from here forward
+inFILE=$1
 inFORMAT=GENEPOP
 outFileEXT=bayescan
 outFORMAT=GESTE_BAYE_SCAN
